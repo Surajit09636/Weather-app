@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: radial-gradient(circle, #2f3b47, #0b111a);
+  color: #fff;
+}
+
+.app {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 80px 1fr 320px;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  background: #111827;
+  border-radius: 20px;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.sidebar nav span {
+  display: block;
+  margin: 15px 0;
+  opacity: 0.6;
+}
+
+.sidebar .active {
+  opacity: 1;
+}
+
+/* Main */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.search {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #1f2937;
+  color: white;
+}
+
+/* Current */
+.current {
+  background: #111827;
+  border-radius: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temp {
+  font-size: 48px;
+}
+
+.icon {
+  font-size: 60px;
+}
+
+/* Cards */
+.card {
+  background: #111827;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.hourly {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  text-align: center;
+}
+
+/* Air */
+.air {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.air span {
+  opacity: 0.6;
+}
+
+/* Forecast */
+.forecast {
+  background: #111827;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.day {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #1f2937;
+}
